@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoción no monetaria dirigida a consumidores</title>
+     <link rel="icon" type="image/png" href="agencia-de-viajes.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+        }
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background: linear-gradient(135deg, #6a1b9a 0%, #9c27b0 50%, #ce93d8 100%);
+            color: white;
+            
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            padding: 40px;
+        }
+        .title-bar {
+            background-color: rgba(0,0,0,0.2);
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: rgba(255,255,255,0.15);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-title {
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .card-title i {
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        .card-content {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .particle {
+            position: absolute;
+            opacity: 0.4;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            z-index: 1;
+        }
+        .icon-feature {
+            font-size: 36px;
+            margin-top: 5rem;
+            color: #ffeb3b;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .experience-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transform: rotate(15deg);
+        }
+        .social-icon {
+            font-size: 24px;
+            margin: 0 5px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <!-- Background particles -->
+        <div class="particle" style="width: 120px; height: 120px; top: 10%; left: 12%; animation: float 9s ease-in-out infinite;"></div>
+        <div class="particle" style="width: 160px; height: 160px; top: 65%; left: 85%; animation: float 13s ease-in-out infinite;"></div>
+        <div class="particle" style="width: 90px; height: 90px; top: 80%; left: 20%; animation: float 11s ease-in-out infinite;"></div>
+        
+        <div class="content">
+            <!-- Title Section -->
+            <div class="title-bar">
+                <h1 class="text-4xl font-bold"><i class="fas fa-gift mr-3"></i> 4. Promoción no monetaria dirigida a consumidores</h1>
+            </div>
+            
+            <!-- Main Content in 3 cards -->
+            <div class="grid grid-cols-3 gap-8 h-4/6">
+                <!-- Objective Card -->
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-bullseye"></i> Objetivo
+                    </div>
+                    <div class="card-content">
+                        <ul class="list-disc ml-5 space-y-3">
+                            <li>Generar mayor engagement en redes sociales</li>
+                            <li>Aumentar reconocimiento y viralidad de la marca</li>
+                            <li>Crear experiencias memorables para estudiantes</li>
+                            <li>Construir relaciones a largo plazo con centros</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center mt-6">
+                        <div class="icon-feature">
+                            <i class="fas fa-hashtag text-8xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Development Card -->
+                <div class="card relative">
+                    <div class="experience-badge"><i class="fas fa-star"></i></div>
+                    <div class="card-title">
+                        <i class="fas fa-trophy"></i> Descripción del desarrollo
+                    </div>
+                    <div class="card-content">
+                        <ul class="list-disc ml-5 space-y-3">
+                            <a href="https://www.canva.com/design/DAGnzwT98Bk/TyB8sDtdyVFJ_dpi6YCGOA/edit?ui=eyJEIjp7IlEiOnsiQSI6dHJ1ZX19LCJBIjp7fX0" target="_blank"><li>Concurso "Mi mejor recuerdo de viaje"</li></a>
+                            <li>Programa de embajadores en redes sociales</li>
+                            <li>Sorteo de actividades exclusivas</li>
+                            <li>Paquete fotográfico personalizado gratuito</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center mt-6">
+                        <div class="icon-feature">
+                            <i class="fas fa-camera text-8xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Target Audience Card -->
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-users"></i> Público objetivo
+                    </div>
+                    <div class="card-content">
+                        <ul class="list-disc ml-5 space-y-3">
+                            <li>Estudiantes activos en redes sociales</li>
+                            <li>Grupos de clase cohesionados</li>
+                            <li>Comunidades escolares con tradición de viajes</li>
+                            <li>Centros educativos innovadores</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center mt-6">
+                        <div class="icon-feature">
+                            <i class="fas fa-mobile-alt text-8xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="flex justify-between items-center mt-6">
+                <div class="text-2xl font-semibold">
+                     <a href="Index.html">ViajEscolar: Viajes Pelayo</a> 
+                </div>
+                <div class="flex space-x-4">
+                    <i class="fab fa-instagram social-icon"></i>
+                    <i class="fab fa-tiktok social-icon"></i>
+                    <i class="fab fa-snapchat social-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple float animation
+        document.head.insertAdjacentHTML('beforeend', `
+            <style>
+                @keyframes float {
+                    0% { transform: translateY(0px) rotate(0deg); }
+                    50% { transform: translateY(-20px) rotate(5deg); }
+                    100% { transform: translateY(0px) rotate(0deg); }
+                }
+            </style>
+        `);
+    </script>
+</body>
+</html>
