@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoción monetaria dirigida a consumidores</title>
+     <link rel="icon" type="image/png" href="agencia-de-viajes.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+        }
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background: linear-gradient(135deg, #1976d2 0%, #64b5f6 50%, #bbdefb 100%);
+            color: white;
+            
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            padding: 40px;
+        }
+        .title-bar {
+            background-color: rgba(0,0,0,0.2);
+            padding: 15px 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .card {
+            background-color: rgba(255,255,255,0.15);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-title {
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .card-title i {
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        .card-content {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .particle {
+            position: absolute;
+            opacity: 0.4;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.3);
+            z-index: 1;
+        }
+        .icon-feature {
+            font-size: 36px;
+            margin-top: 80px;
+            margin-bottom: 15px;
+            color: #ffeb3b;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .discount-badge {
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background-color: #f44336;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transform: rotate(15deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <!-- Background particles -->
+        <div class="particle" style="width: 100px; height: 100px; top: 5%; left: 8%; animation: float 8s ease-in-out infinite;"></div>
+        <div class="particle" style="width: 150px; height: 150px; top: 60%; left: 90%; animation: float 12s ease-in-out infinite;"></div>
+        <div class="particle" style="width: 80px; height: 80px; top: 75%; left: 15%; animation: float 10s ease-in-out infinite;"></div>
+        
+        <div class="content">
+            <!-- Title Section -->
+            <div class="title-bar">
+                <h1 class="text-4xl font-bold"><i class="fas fa-euro-sign mr-3"></i> 3. Promoción monetaria dirigida a consumidores</h1>
+            </div>
+            
+            <!-- Main Content in 3 cards -->
+            <div class="grid grid-cols-3 gap-8 h-4/6">
+                <!-- Objective Card -->
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-bullseye"></i> Objetivo
+                    </div>
+                    <div class="card-content">
+                        <ul class="list-disc ml-5 space-y-3">
+                            <li>Incrementar reservas tempranas en un 40%</li>
+                            <li>Fidelizar a centros educativos recurrentes</li>
+                            <li>Aumentar el valor promedio del viaje</li>
+                            <li>Incentivar grupos grandes con ofertas especiales</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center mt-6">
+                        <div class="icon-feature">
+                            <i class="fas fa-chart-line text-8xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Development Card -->
+                <div class="card relative">
+                    <div class="discount-badge">-20%</div>
+                    <div class="card-title">
+                        <i class="fas fa-tags"></i> Descripción del desarrollo
+                    </div>
+                    <div class="card-content">
+                        <ul class="list-disc ml-5 space-y-3">
+                            <li>Descuento del 20% por reserva anticipada</li>
+                            <li>Plan "Paga a plazos" sin intereses</li>
+                            <li>Promoción 20+2: dos plazas gratis por cada 20</li>
+                            <li>Cupones descuento para próximos viajes</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center mt-6">
+                        <div class="icon-feature">
+                            <i class="fas fa-percentage text-8xl"></i>
+                        </div>
+                    </div>
+                </div> 
+                
+                <!-- Target Audience Card -->
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-users"></i> Público objetivo
+                    </div>
+                    <div class="card-content">
+                        <ul class="list-disc ml-5 space-y-3">
+                            <li>Estudiantes de 4º ESO y 2º Bachillerato</li>
+                            <li>Padres y madres que financian el viaje</li>
+                            <li>AMPAS y asociaciones de estudiantes</li>
+                            <li>Centros educativos públicos y privados</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-center mt-6">
+                        <div class="icon-feature">
+                            <i class="fas fa-user-graduate text-8xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            <div class="flex justify-between items-center mt-6">
+                <div class="text-2xl font-semibold"> <a href="Index.html">ViajEscolar: Viajes Pelayo</a> 
+                </div>
+                <div class="flex space-x-4">
+                    <a href="quinto.html"><i class="fas fa-plane text-xl"></i></a>
+                    <i class="fas fa-euro-sign text-xl"></i>
+                    <i class="fas fa-piggy-bank text-xl"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple float animation
+        document.head.insertAdjacentHTML('beforeend', `
+            <style>
+                @keyframes float {
+                    0% { transform: translateY(0px) rotate(0deg); }
+                    50% { transform: translateY(-20px) rotate(5deg); }
+                    100% { transform: translateY(0px) rotate(0deg); }
+                }
+            </style>
+        `);
+    </script>
+</body>
+</html>
