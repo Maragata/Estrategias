@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategias de Promoción - Viajes Fin de Curso</title>
+    <link rel="icon" type="image/png" href="agencia-de-viajes.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden;
+        }
+        .slide {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            background: linear-gradient(135deg, #1e5799 0%,#2989d8 50%,#7db9e8 100%);
+            color: white;
+            
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .title {
+            font-size: 64px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .subtitle {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 60px;
+            line-height: 1.4;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        .decorative-elements {
+            position: absolute;
+            bottom: 30px;
+            right: 40px;
+            display: flex;
+            gap: 20px;
+            font-size: 36px;
+        }
+        .particle {
+            position: absolute;
+            opacity: 0.6;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="slide">
+        <!-- Background particles -->
+        <div class="particle" style="width: 150px; height: 150px; top: 50%; left: 10%; animation: float 7s ease-in-out infinite;"></div>
+        <div class="particle" style="width: 200px; height: 200px; top: 70%; left: 85%; animation: float 3s ease-in-out infinite;"></div>
+        <div class="particle" style="width: 100px; height: 100px; top: 85%; left: 25%; animation: float 10s ease-in-out infinite;"></div>
+        <div class="particle" style="width: 140px; height: 140px; top: 15%; left: 80%; animation: float 9s ease-in-out infinite;"></div>
+        
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="mb-4 text-xl">
+                <i class="fas fa-map-marked-alt"></i> Proyecto de Promoción de Ventas
+            </div>
+            
+            <h1 class="title">Estrategias de Promoción<br>Viajes Fin de Curso</h1>
+            
+            <h2 class="subtitle">Agencia especializada en viajes para<br>estudiantes de ESO y Bachillerato</h2>
+            
+            <div class="mt-auto flex items-center">
+                <div class="bg-white px-5 py-2 rounded-lg text-blue-800 font-bold text-xl">
+                  <a href="segundo.html" class="bg-white text-blue-800 font-bold py-2 px-4 rounded-lg hover:bg-blue-100">
+  Ir a la página 2
+</a>
+ 
+                </div>
+            </div>
+        </div>
+        
+        <div class="decorative-elements">
+            <i class="fas fa-plane"></i>
+            <i class="fas fa-mountain"></i>
+            <i class="fas fa-graduation-cap"></i>
+            <i class="fas fa-camera"></i>
+        </div>
+    </div>
+
+    <script>
+        // Simple float animation
+        document.head.insertAdjacentHTML('beforeend', `
+            <style>
+                @keyframes float {
+                    0% { transform: translateY(0px) rotate(0deg); }
+                    50% { transform: translateY(-20px) rotate(5deg); }
+                    100% { transform: translateY(0px) rotate(0deg); }
+                }
+            </style>
+        `);
+    </script>
+</body>
+</html>
