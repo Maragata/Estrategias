@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Proyecto de Marketing</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Fallback por si el degradado no carga */
+            font-family: Arial, sans-serif;
+            color: #333333;
+        }
+        .email-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #e5e4eb; /* Color de fondo del contenido principal */
+        }
+        .header {
+            /* Aplicamos el degradado aquí como fallback y en la celda interior para Outlook */
+            background: #1e5799; /* Fallback color */
+            background: linear-gradient(135deg, #1e5799 0%,#2989d8 50%,#7db9e8 100%);
+            padding: 30px 20px;
+            text-align: center;
+            color: #ffffff;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+        .content {
+            padding: 30px 20px;
+            line-height: 1.6;
+            color: #333333;
+        }
+        .content h2 {
+            color: #1e5799; /* Azul oscuro del degradado para títulos */
+            font-size: 22px;
+            margin-top: 0;
+        }
+        .content p {
+            margin-bottom: 15px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #1e5799; /* Botón con el azul oscuro */
+            color: #ffffff !important; /* Importante para anular estilos de cliente de correo */
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+            color: #777777;
+            background-color: #f4f4f4;
+        }
+        .footer a {
+            color: #1e5799;
+            text-decoration: none;
+        }
+        /* Estilos específicos para Outlook y clientes que no soportan bien linear-gradient en divs */
+        .gradient-background {
+             background: #1e5799; /* Fallback */
+        }
+    </style>
+</head>
+<body>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: #f4f4f4;">
+        <tr>
+            <td align="center">
+                <table class="email-container" border="0" cellspacing="0" cellpadding="0" width="600">
+                    <tr>
+                        <td class="gradient-background" style="background: linear-gradient(135deg, #1e5799 0%,#2989d8 50%,#7db9e8 100%);">
+                            <div class="header">
+                                <h1>¡Invitación Especial!</h1>
+                                <p>Presentación de Nuestro Nuevo Proyecto de Marketing Educativo</p>
+                            </div>
+                            </td>
+                    </tr>
+
+                    <tr>
+                        <td class="content">
+                            <h2>Estimados Profesores y Equipo Directivo,</h2>
+                            <p>
+                                En Viajes Pelayo, estamos entusiasmados por la oportunidad de presentarles una innovadora propuesta de marketing diseñada específicamente para
+                                conectar con la comunidad educativa y potenciar la imagen de IES Llanera.
+                            </p>
+                            <p>
+                                Hemos desarrollado un proyecto que combina creatividad, estrategia digital y un profundo entendimiento del sector educativo, con el objetivo de incrementar la visibilidad del centro y comunicar eficazmente sus valores y oferta educativa.
+                            </p>
+                            <p>
+                                Durante la presentación, detallaremos:
+                            </p>
+                            <ul>
+                                <li>Nuestra visión y estrategia de marketing.</li>
+                                <li>Las herramientas y canales que proponemos utilizar.</li>
+                                <li>Cómo este proyecto puede beneficiar directamente a su institución y a sus alumnos.</li>
+                                <li>Ejemplos concretos y proyecciones.</li>
+                            </ul>
+                            <p>
+                                Nos encantaría contar con su presencia y recibir sus valiosos comentarios. La presentación se llevará a cabo:
+                            </p>
+                            <p>
+                                <strong>Fecha:</strong> 20 de mayo de 2025<br>
+                                <strong>Hora:</strong> 11 horas<br>
+                                <strong>Lugar/Enlace:</strong> Casa Municipal Llanera
+                            </p>
+                            <p style="text-align: center;">
+                                <a href="[Enlace de Confirmación o Más Información si aplica]" class="cta-button" style="color: #ffffff !important; text-decoration: none !important;">Confirmar Asistencia / Saber Más</a>
+                            </p>
+                            <p>
+                                Agradecemos de antemano su tiempo y consideración. ¡Esperamos verles!
+                            </p>
+                            <p>
+                                Saludos cordiales,<br>
+                                El Equipo de Viajes Pelayo
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="footer">
+                            <p>&copy; 2025 Viajes Pelayo. Todos los derechos reservados.</p>
+                            <p>Calle Pelayo Nº 24 | <a href="tel:[Número de Teléfono]">635054618</a></p>
+                            <p><a href="[Enlace a tu Web]">WWW.Viajes Pelayo .com</a> | <a href="[Enlace para Darse de Baja si es una campaña masiva]">Darse de baja</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
